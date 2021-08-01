@@ -33,4 +33,7 @@ update Address_Book_Table set EmailId='siva@gmail.com' where FirstName='Siva';
 update Address_Book_Table set LastName='Sivakumar' where FirstName='Surya';
 
 select * from Address_Book_Table;
-
+ --Uc5--
+ delete from Address_Book_Table where FirstName='Siva';
+ 
+select * from Address_Book_Table;
