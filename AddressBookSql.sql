@@ -24,3 +24,13 @@ Insert into Address_Book_Table values('Diwakar','N','Ambattur','chennai','Tn',60
 
 
 select * from Address_Book_Table;
+
+--Uc4--
+update Address_Book_Table set City='Pursaiwalkam' where FirstName='Gayathri';
+
+update Address_Book_Table set EmailId='siva@gmail.com' where FirstName='Siva';
+
+update Address_Book_Table set LastName='Sivakumar' where FirstName='Surya';
+
+select * from Address_Book_Table;
+
