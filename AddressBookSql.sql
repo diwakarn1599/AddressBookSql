@@ -37,3 +37,6 @@ select * from Address_Book_Table;
  delete from Address_Book_Table where FirstName='Siva';
  
 select * from Address_Book_Table;
+
+--Uc6--
+Select * from Address_Book_Table where City='chennai' or StateName='Tn';
