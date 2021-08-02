@@ -34,12 +34,15 @@ update Address_Book_Table set LastName='Sivakumar' where FirstName='Surya';
 
 select * from Address_Book_Table;
  --Uc5--
- delete from Address_Book_Table where FirstName='Siva';
+delete from Address_Book_Table where FirstName='Siva';
  
 select * from Address_Book_Table;
 
 --Uc6--
 Select * from Address_Book_Table where City='chennai' or StateName='Tn';
 
---UC7--
+--Uc7--
 Select Count(*) As Count,StateName,City from Address_Book_Table group by StateName,City;
+
+--Uc8--
+Select * from Address_Book_Table city where city ='chennai' order by FirstName ASC;
