@@ -68,3 +68,7 @@ UPDATE  Address_Book_Table SET
 AdressBookName='ProfessionAddressBook' , AbType = 'profession' 
 WHERE
 FirstName ='Dhruv' or FirstName='Raju';
+
+--Uc10--
+Select count(*)as CountAbType, AbType  from Address_Book_Table group by AbType;
+Select count(*)as CountAbNames, AdressBookName  from Address_Book_Table group by AdressBookName;
