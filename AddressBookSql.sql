@@ -21,7 +21,7 @@ Insert into Address_Book_Table values('Diwakar','N','Ambattur','chennai','Tn',60
 ('Gayathri','Sri','Egmore','chennai','Tn',600072,9852343210,'qwer@gmail.com'),
 ('Surya','S','mogappair','chennai','Tn',600022,9876145210,'surya@gmail.com'),
 ('Siva','Karthi','Chik','Manglore','karnataka',56872,9885443210,'qazx@gmail.com');
-
+--Insert into Address_Book_Table values ('Siva','Karthi','Chik','Manglore','karnataka',56872,9885443210,'qazx@gmail.com');
 
 select * from Address_Book_Table;
 
@@ -40,3 +40,6 @@ select * from Address_Book_Table;
 
 --Uc6--
 Select * from Address_Book_Table where City='chennai' or StateName='Tn';
+
+--UC7--
+Select Count(*) As Count,StateName,City from Address_Book_Table group by StateName,City;
