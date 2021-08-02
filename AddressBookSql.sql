@@ -22,6 +22,7 @@ Insert into Address_Book_Table values('Diwakar','N','Ambattur','chennai','Tn',60
 ('Surya','S','mogappair','chennai','Tn',600022,9876145210,'surya@gmail.com'),
 ('Siva','Karthi','Chik','Manglore','karnataka',56872,9885443210,'qazx@gmail.com');
 --Insert into Address_Book_Table values ('Siva','Karthi','Chik','Manglore','karnataka',56872,9885443210,'qazx@gmail.com');
+Insert into Address_Book_Table values ('Dhruv','Vikram','malleshwaram','banglore','karnataka',56872,9025443210,'dhruv@gmail.com'),('Raju','Bhai','Andheri','Mumbai','Maharashtra',56872,7845443210,'raju@gmail.com');
 
 select * from Address_Book_Table;
 
@@ -46,3 +47,24 @@ Select Count(*) As Count,StateName,City from Address_Book_Table group by StateNa
 
 --Uc8--
 Select * from Address_Book_Table city where city ='chennai' order by FirstName ASC;
+
+--Uc9--
+--Add two columns
+ALTER TABLE Address_Book_Table ADD 
+AdressBookName varchar(50),AbType varchar(20);
+
+
+UPDATE  Address_Book_Table SET
+AdressBookName='FamilyAddressBook' , AbType = 'Family' 
+WHERE
+FirstName ='Diwakar' or FirstName='Gayathri';
+
+UPDATE  Address_Book_Table SET
+AdressBookName='FriendAddressBook' , AbType = 'Friend' 
+WHERE
+FirstName ='Surya' or FirstName='Siva';
+
+UPDATE  Address_Book_Table SET
+AdressBookName='ProfessionAddressBook' , AbType = 'profession' 
+WHERE
+FirstName ='Dhruv' or FirstName='Raju';
